@@ -287,7 +287,7 @@ export class Term extends ILeafQuery {
   static of(field: string, value: string): Term {
     let rv = new Term()
     let o: Record<string, string> = {}
-    o.field = value
+    o[field] = value
     rv.term = o
     return rv
   }

@@ -28,7 +28,8 @@ export class GrowableBuffer implements IGrowableBuffer {
   }
 
   write(s: string): void {
-    let buff = Buffer.from(s, this.encoding)
+  //    let buff = Buffer.from(s, this.encoding)
+    let buff = Buffer.from(s)
     this.writeBuffer(buff)
   }
 
